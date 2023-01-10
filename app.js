@@ -14,6 +14,7 @@ const moveUp = () => {
 }
 
 document.addEventListener("keydown", moveUp);
+document.addEventListener("touchstart", moveUp);
 
 const pipe = [];
 pipe[0] = {
