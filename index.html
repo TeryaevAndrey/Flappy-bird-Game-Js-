@@ -7,7 +7,23 @@
   <title>Flappy Bird</title>
 </head>
 <body>
-  <canvas id="canvas" width="288" height="512"></canvas>
+  <div class="wrapper">
+    <canvas id="canvas" width="288" height="512"></canvas>
+  </div>
+
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
 
   <script src="app.js"></script>
 </body>
