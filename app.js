@@ -33,6 +33,10 @@ fg.src="img/road.png";
 pipeUp.src="img/top.png";
 pipeBottom.src="img/bottom.png";
 
+const score_audio = new Audio();
+
+score_audio.src="audio/score.mp3";
+
 const draw = () => {
   ctx.drawImage(bg, 0, 0);
 
@@ -55,6 +59,7 @@ const draw = () => {
 
     if(pipe[i].x === 5) {
       score++;
+      score_audio.play();
     }
   }
   
